@@ -1,0 +1,26 @@
+.root {
+    -fx-font-family: "Segoe UI", sans-serif;
+}
+
+.text-area {
+    -fx-font-size: 12px;
+    -fx-control-inner-background: #1e1e1e;
+    -fx-text-fill: white;
+    -fx-highlight-fill: #264f78;
+    -fx-highlight-text-fill: white;
+}
+
+.button {
+    -fx-background-radius: 8;
+    -fx-background-color: #2196F3;
+    -fx-text-fill: white;
+    -fx-padding: 8 16;
+}
+
+.combo-box {
+    -fx-pref-width: 300px;
+}
+
+.label {
+    -fx-font-size: 13px;
+}

@@ -1,0 +1,32 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Compile JavaFX",
+        "type": "shell",
+        "command": "javac",
+        "args": [
+          "--module-path", "lib/javafx-sdk-24.0.1/lib",
+          "--add-modules", "javafx.controls,javafx.fxml",
+          "-d", "out",
+          "src/NetworkInfoFX.java"
+        ],
+        "group": "build",
+        "problemMatcher": []
+      },
+      {
+        "label": "Run JavaFX",
+        "type": "shell",
+        "command": "cmd",
+        "args": [
+          "/c",
+          "xcopy styles\\styles.css out\\styles\\ /E /I /Y && java --enable-native-access=ALL-UNNAMED --module-path lib/javafx-sdk-24.0.1/lib --add-modules javafx.controls,javafx.fxml -cp out NetworkInfoFX"
+        ],
+        "group": {
+          "kind": "test",
+          "isDefault": true
+        }
+      }
+    ]
+  }
+  
