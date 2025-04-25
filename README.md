@@ -2,11 +2,14 @@ In today's interconnected world, network administrators and users often struggle
 
 # Code Setup:
 Project Folder/
+
 ├── lib/
 │   └── javafx-sdk-24.0.1/
 │       └── lib/          
+
 ├── src/
 │   └── NetworkInfoFX.java
+
 ├── out/                 
 ├── styles/
 │   └── styles.css
